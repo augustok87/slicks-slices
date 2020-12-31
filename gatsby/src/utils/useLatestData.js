@@ -52,7 +52,6 @@ export default function useLatestData() {
         setHotSlices(res.data.StoreSettings.hotSlices);
       })
       .catch((err) => {
-        console.log('shoooot');
         console.log(err);
       });
   }, []);
@@ -61,3 +60,5 @@ export default function useLatestData() {
     slicemasters,
   };
 }
+
+// asd

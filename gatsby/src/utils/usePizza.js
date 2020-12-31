@@ -15,7 +15,6 @@ export default function usePizza({ pizzas, values }) {
   const [message, setMessage] = useState('');
   // 2. make a function add things to OrderPage
   function addToOrder(orderedPizza) {
-    console.log(orderedPizza);
     setOrder([...order, orderedPizza]);
   }
   // 3. make a function remove things from order
@@ -30,7 +29,6 @@ export default function usePizza({ pizzas, values }) {
   // this is the function that is run when someone submits the form
   async function submitOrder(e) {
     e.preventDefault();
-    console.log(e);
     setLoading(true);
     setError(null);
     // setMessage(null);
