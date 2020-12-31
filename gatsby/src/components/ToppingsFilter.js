@@ -78,7 +78,6 @@ export default function ToppingsFilter({ activeTopping }) {
   `);
   // count how many pizzas are in each topping
   const toppingsWithCounts = countPizzasInToppings(pizzas.nodes);
-  console.log(toppingsWithCounts);
   // Loop over the list of toppings and display the topping and the count of pizzas in that topping
   // eslint-disable-next-line no-lone-blocks
   // Link it up...
